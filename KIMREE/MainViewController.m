@@ -28,9 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    /*
-    NSLog(@"%f, %f, %f, %f ",_newsView.frame.origin.x, _newsView.frame.origin.y, _newsView.bounds.size.width, _newsView.bounds.size.height);
-     */
     //设置新闻
     [self creatNews];
     
@@ -47,15 +44,12 @@
     //设置功能按钮偏移动画
     if (_funcScroller.scrollEnabled) {
         CGPoint bottomOffset = CGPointMake(self.funcScroller.contentOffset.x, self.funcScroller.contentSize.height - self.funcScroller.frame.size.height);
-        _funcScroller.contentSize=CGSizeMake(_funcScroller.frame.size.width, S_SCREEN_SIZE.height-_newsView.frame.size.height-24);
         [self.funcScroller setContentOffset:bottomOffset animated:NO];
         CGPoint newOffset = self.funcScroller.contentOffset;
-        newOffset.y = 20;
-        if (S_SCREEN_SIZE.height > 480) {
-            newOffset.y = -20;
-        }
-        _funcScroller.scrollEnabled = NO;
+        newOffset.y = 0;
         [self.funcScroller setContentOffset:newOffset animated:YES];
+        _funcScroller.scrollEnabled = NO;
+
     }
 }
 
@@ -83,9 +77,9 @@
 #pragma EScrollerViewDelegate--
 -(void)EScrollerViewDidClicked:(NSUInteger)index
 {
-    NSLog(@"你好，我是新闻 ：%d",index);
+    NSLog(@"你好，我是新闻 ：%i",index);
 }
-//功能菜单项12313
+//功能菜单项
 #pragma Methods you must add
 // You need a method like this to setup your menu
 //贴吧
