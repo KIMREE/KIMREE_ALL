@@ -1,14 +1,15 @@
 //
 //  SWTableViewCell.h
-//  SWTableViewCell
+//  KIMREE
 //
-//  Created by Chris Wendel on 9/10/13.
-//  Copyright (c) 2013 Chris Wendel. All rights reserved.
+//  Created by JIRUI on 14-4-7.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <UIKit/UIGestureRecognizerSubclass.h>
-
+#import "FBGlowLabel.h"
+#import "UILabel+JIRUI.h"
 @class SWTableViewCell;
 
 typedef enum {
@@ -31,7 +32,8 @@ typedef enum {
 @property (nonatomic, strong) NSArray *leftUtilityButtons;
 @property (nonatomic, strong) NSArray *rightUtilityButtons;
 @property (nonatomic) id <SWTableViewCellDelegate> delegate;
-
+//note+post
+@property (nonatomic, strong) UILabel *notePost;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier containingTableView:(UITableView *)containingTableView leftUtilityButtons:(NSArray *)leftUtilityButtons rightUtilityButtons:(NSArray *)rightUtilityButtons;
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor;

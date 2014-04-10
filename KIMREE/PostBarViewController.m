@@ -99,10 +99,25 @@
         cell.delegate = self;
     }
     
-    NSDate *dateObject = _testArray[indexPath.row];
-    cell.textLabel.text = [dateObject description];
-    cell.detailTextLabel.text = @"Some detail text";
-    
+//    NSDate *dateObject = _testArray[indexPath.row];
+//    cell.textLabel.text = [dateObject description];
+    cell.textLabel.text = _testArray[indexPath.row];
+    cell.notePost.text = @"123412341234";
+    switch (indexPath.row) {
+        case 0:
+            cell.detailTextLabel.text = @"指将企业经营所需的资源提供给企业中需要资源的部门的企业经营活动";
+            break;
+        case 1:
+            cell.detailTextLabel.text = @"为您提供最新求购信息、买家信息,囊括了相关采购企业的采购计划、采购需求、采购产品等信息,是买家企业的权威数据库";
+            break;
+        case 2:
+            cell.detailTextLabel.text = @"招揽商户，发包方将自己的服务、产品面向一定范围进行发布，以招募商户共同发展";
+            break;
+        case 3:
+            cell.detailTextLabel.text = @"Some detail text";
+        default:
+            break;
+    }
     return cell;
 }
 

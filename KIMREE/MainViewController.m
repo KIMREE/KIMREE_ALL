@@ -33,6 +33,10 @@
     
 }
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
@@ -86,7 +90,7 @@
     PostBarViewController *postBar = [[PostBarViewController alloc]init];
     postBar.view.backgroundColor = [UIColor grayColor];
     [self.navigationController pushViewController:postBar animated:YES];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
 }
 
 @end

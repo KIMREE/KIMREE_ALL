@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C628686E18F64E3A009234E8 /* FBGlowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C628686D18F64E3A009234E8 /* FBGlowLabel.m */; };
+		C628687118F659D3009234E8 /* UILabel+JIRUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C628687018F659D3009234E8 /* UILabel+JIRUI.m */; };
 		C6A261D218F53FD40025CF8F /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A261D118F53FD40025CF8F /* SWTableViewCell.m */; };
 		C6A261DB18F5414B0025CF8F /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A261D618F5414B0025CF8F /* list@2x.png */; };
 		C6A261DC18F5414B0025CF8F /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A261D718F5414B0025CF8F /* check@2x.png */; };
@@ -54,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C628686C18F64E3A009234E8 /* FBGlowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGlowLabel.h; sourceTree = "<group>"; };
+		C628686D18F64E3A009234E8 /* FBGlowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBGlowLabel.m; sourceTree = "<group>"; };
+		C628686F18F659D3009234E8 /* UILabel+JIRUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JIRUI.h"; sourceTree = "<group>"; };
+		C628687018F659D3009234E8 /* UILabel+JIRUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JIRUI.m"; sourceTree = "<group>"; };
 		C6A261D018F53FD40025CF8F /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
 		C6A261D118F53FD40025CF8F /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
 		C6A261D618F5414B0025CF8F /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
@@ -145,8 +151,12 @@
 		C6A261CF18F53FBE0025CF8F /* PostBar */ = {
 			isa = PBXGroup;
 			children = (
+				C628686C18F64E3A009234E8 /* FBGlowLabel.h */,
+				C628686D18F64E3A009234E8 /* FBGlowLabel.m */,
 				C6A261D018F53FD40025CF8F /* SWTableViewCell.h */,
 				C6A261D118F53FD40025CF8F /* SWTableViewCell.m */,
+				C628686F18F659D3009234E8 /* UILabel+JIRUI.h */,
+				C628687018F659D3009234E8 /* UILabel+JIRUI.m */,
 				C6A261E018F542370025CF8F /* PostBarViewController.h */,
 				C6A261E118F542370025CF8F /* PostBarViewController.m */,
 				C6A261E218F542370025CF8F /* PostBarViewController.xib */,
@@ -439,12 +449,14 @@
 				C6E573F918F3A688008DFA54 /* DateTimeHelper.m in Sources */,
 				C6E5740518F3A6F4008DFA54 /* JDStatusBarNotification.m in Sources */,
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
+				C628687118F659D3009234E8 /* UILabel+JIRUI.m in Sources */,
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
 				C6A261D218F53FD40025CF8F /* SWTableViewCell.m in Sources */,
 				C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */,
 				C6A261E318F542370025CF8F /* PostBarViewController.m in Sources */,
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
+				C628686E18F64E3A009234E8 /* FBGlowLabel.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,
 				C6AC988418F27FAC00CCF79C /* EScrollerView.m in Sources */,

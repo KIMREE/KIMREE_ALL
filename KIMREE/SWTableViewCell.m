@@ -1,9 +1,9 @@
 //
 //  SWTableViewCell.m
-//  SWTableViewCell
+//  KIMREE
 //
-//  Created by Chris Wendel on 9/10/13.
-//  Copyright (c) 2013 Chris Wendel. All rights reserved.
+//  Created by JIRUI on 14-4-7.
+//  Copyright (c) 2014年 JIRUI. All rights reserved.
 //
 
 #import "SWTableViewCell.h"
@@ -110,7 +110,6 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 @end
 
 @implementation SWTableViewCell
-
 #pragma mark Initializers
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier containingTableView:(UITableView *)containingTableView leftUtilityButtons:(NSArray *)leftUtilityButtons rightUtilityButtons:(NSArray *)rightUtilityButtons {
@@ -121,6 +120,7 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
         self.height = containingTableView.rowHeight;
         self.containingTableView = containingTableView;
         self.highlighted = NO;
+
         [self initializer];
     }
     
@@ -158,6 +158,11 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 }
 
 - (void)initializer {
+    //Set up the note numbers
+    CGRect frame = CGRectMake(CGRectGetWidth(self.bounds)/3.0, _height*3.8/5, CGRectGetWidth(self.bounds)/2, _height/6.0);
+    self.notePost = [UILabel LabelForGlowRect:frame Font:16];
+    [self addSubview:self.notePost];
+
     // Set up scroll view that will host our cell content
     UIScrollView *cellScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), _height)];
     cellScrollView.contentSize = CGSizeMake(CGRectGetWidth(self.bounds) + [self utilityButtonsPadding], _height);
