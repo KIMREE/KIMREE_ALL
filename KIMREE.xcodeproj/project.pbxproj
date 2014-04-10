@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6A261D218F53FD40025CF8F /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A261D118F53FD40025CF8F /* SWTableViewCell.m */; };
+		C6A261DB18F5414B0025CF8F /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A261D618F5414B0025CF8F /* list@2x.png */; };
+		C6A261DC18F5414B0025CF8F /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A261D718F5414B0025CF8F /* check@2x.png */; };
+		C6A261DD18F5414B0025CF8F /* cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A261D818F5414B0025CF8F /* cross@2x.png */; };
+		C6A261DE18F5414B0025CF8F /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A261D918F5414B0025CF8F /* clock@2x.png */; };
+		C6A261DF18F5414B0025CF8F /* MI.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A261DA18F5414B0025CF8F /* MI.png */; };
+		C6A261E318F542370025CF8F /* PostBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A261E118F542370025CF8F /* PostBarViewController.m */; };
+		C6A261E418F542370025CF8F /* PostBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A261E218F542370025CF8F /* PostBarViewController.xib */; };
 		C6AC985318F234F500CCF79C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985218F234F500CCF79C /* Foundation.framework */; };
 		C6AC985518F234F500CCF79C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985418F234F500CCF79C /* CoreGraphics.framework */; };
 		C6AC985718F234F500CCF79C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC985618F234F500CCF79C /* UIKit.framework */; };
@@ -46,6 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6A261D018F53FD40025CF8F /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
+		C6A261D118F53FD40025CF8F /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		C6A261D618F5414B0025CF8F /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		C6A261D718F5414B0025CF8F /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		C6A261D818F5414B0025CF8F /* cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross@2x.png"; sourceTree = "<group>"; };
+		C6A261D918F5414B0025CF8F /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		C6A261DA18F5414B0025CF8F /* MI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MI.png; sourceTree = "<group>"; };
+		C6A261E018F542370025CF8F /* PostBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostBarViewController.h; sourceTree = "<group>"; };
+		C6A261E118F542370025CF8F /* PostBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostBarViewController.m; sourceTree = "<group>"; };
+		C6A261E218F542370025CF8F /* PostBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostBarViewController.xib; sourceTree = "<group>"; };
 		C6AC984F18F234F500CCF79C /* KIMREE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIMREE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC985218F234F500CCF79C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6AC985418F234F500CCF79C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +142,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6A261CF18F53FBE0025CF8F /* PostBar */ = {
+			isa = PBXGroup;
+			children = (
+				C6A261D018F53FD40025CF8F /* SWTableViewCell.h */,
+				C6A261D118F53FD40025CF8F /* SWTableViewCell.m */,
+				C6A261E018F542370025CF8F /* PostBarViewController.h */,
+				C6A261E118F542370025CF8F /* PostBarViewController.m */,
+				C6A261E218F542370025CF8F /* PostBarViewController.xib */,
+			);
+			name = PostBar;
+			sourceTree = "<group>";
+		};
 		C6AC984618F234F500CCF79C = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +189,7 @@
 			children = (
 				C6AC986118F234F500CCF79C /* AppDelegate.h */,
 				C6AC986218F234F500CCF79C /* AppDelegate.m */,
+				C6A261CF18F53FBE0025CF8F /* PostBar */,
 				C6AC98D018F2A2B900CCF79C /* RootViewController */,
 				C6E5740818F3AB76008DFA54 /* headers */,
 				C6E573FE18F3A6D7008DFA54 /* JDStatusBarNotification */,
@@ -225,6 +256,11 @@
 		C6AC98D118F2A3CB00CCF79C /* NewsPicture */ = {
 			isa = PBXGroup;
 			children = (
+				C6A261D618F5414B0025CF8F /* list@2x.png */,
+				C6A261D718F5414B0025CF8F /* check@2x.png */,
+				C6A261D818F5414B0025CF8F /* cross@2x.png */,
+				C6A261D918F5414B0025CF8F /* clock@2x.png */,
+				C6A261DA18F5414B0025CF8F /* MI.png */,
 				C6AC988F18F280D000CCF79C /* 1.jpg */,
 				C6AC989018F280D000CCF79C /* 2.jpg */,
 				C6AC989118F280D000CCF79C /* 3.jpg */,
@@ -371,11 +407,17 @@
 			files = (
 				C6AC985D18F234F500CCF79C /* InfoPlist.strings in Resources */,
 				C6AC98E018F2AD0800CCF79C /* books.plist in Resources */,
+				C6A261DC18F5414B0025CF8F /* check@2x.png in Resources */,
 				C6AC989218F280D000CCF79C /* 1.jpg in Resources */,
 				C6AC989318F280D000CCF79C /* 2.jpg in Resources */,
+				C6A261DD18F5414B0025CF8F /* cross@2x.png in Resources */,
+				C6A261DB18F5414B0025CF8F /* list@2x.png in Resources */,
 				C6AC989418F280D000CCF79C /* 3.jpg in Resources */,
 				C6AC988E18F2808900CCF79C /* MainViewController.xib in Resources */,
 				C6AC986518F234F500CCF79C /* Images.xcassets in Resources */,
+				C6A261E418F542370025CF8F /* PostBarViewController.xib in Resources */,
+				C6A261DE18F5414B0025CF8F /* clock@2x.png in Resources */,
+				C6A261DF18F5414B0025CF8F /* MI.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +441,9 @@
 				C6E573FD18F3A6BE008DFA54 /* NSString+JiRui.m in Sources */,
 				C6E5740618F3A6F4008DFA54 /* JDStatusBarStyle.m in Sources */,
 				C6E5740718F3A6F4008DFA54 /* JDStatusBarView.m in Sources */,
+				C6A261D218F53FD40025CF8F /* SWTableViewCell.m in Sources */,
 				C6E573EF18F3A3D0008DFA54 /* pinyin.c in Sources */,
+				C6A261E318F542370025CF8F /* PostBarViewController.m in Sources */,
 				C6AC986318F234F500CCF79C /* AppDelegate.m in Sources */,
 				C6AC985F18F234F500CCF79C /* main.m in Sources */,
 				C6E573F818F3A688008DFA54 /* SystemHelper.m in Sources */,

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "EScrollerView.h"
-#import "Header.h"
+#import "PostBarViewController.h"
 @interface MainViewController : UIViewController <EScrollerViewDelegate>
 @end

@@ -34,7 +34,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 
@@ -49,7 +49,6 @@
         newOffset.y = 0;
         [self.funcScroller setContentOffset:newOffset animated:YES];
         _funcScroller.scrollEnabled = NO;
-
     }
 }
 
@@ -84,9 +83,9 @@
 // You need a method like this to setup your menu
 //贴吧
 - (IBAction)PostBar:(id)sender {
-    UIViewController *PostBar = [[UIViewController alloc]init];
-    PostBar.view.backgroundColor = [UIColor grayColor];
-    [self.navigationController pushViewController:PostBar animated:YES];
+    PostBarViewController *postBar = [[PostBarViewController alloc]init];
+    postBar.view.backgroundColor = [UIColor grayColor];
+    [self.navigationController pushViewController:postBar animated:YES];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
